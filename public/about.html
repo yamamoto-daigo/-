@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cup of Coffee" content="静岡にあるコーヒー専門店">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <script src="https://kit.fontawesome.com/9b058b295a.js" crossorigin="anonymous"></script>
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'tqr3rlr',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+    <title>山本企画 -お問い合わせ-</title>
+</head>
+
+<body id="contact" class="body">
+    <header class="header">
+        <!-- ロゴ -->
+        <h1 class="logo">
+            <a href="../index.html">
+                <img class="logo" src="../img/logo.png" alt="logo">
+            </a>
+        </h1>
+        <!-- ハンバーガーメニュー -->
+        <div class="drawer">
+            <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+            <input type="checkbox" name="navToggle" id="navToggle" class="nav-toggle">
+            <!-- ハンバーガーメニューのアイコン -->
+            <label for="navToggle" class="btn-burger">
+                <span class="icon"></span>
+            </label>
+            <!-- 表示されるメニューの中身 -->
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="project.html">PROJECT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="company">
+        <h2 class="title">会社概要</h2>
+        <table>
+            <tr>
+                <th>会社名</th>
+                <td>山本企画 合同会社</td>
+            </tr>
+            <tr>
+                <th>設立</th>
+                <td>2020年2月</td>
+            </tr>
+            <tr>
+                <th>代表</th>
+                <td>山本裕之</td>
+            </tr>
+            <tr>
+                <th>住所</th>
+                <td>静岡県静岡市駿河区中原303-5</td>
+            </tr>
+            <tr>
+                <th>住所</th>
+                <td>静岡県静岡市駿河区中原303-5</td>
+            </tr>
+            <tr>
+                <th>業務</th>
+                <td>システムの企画・構想支援<br>モデリング・インストラクター<br>サービス・スペースの運営</td>
+            </tr>
+        </table>
+    </div>
+    <div class="main-container">
+        <h2 class="title">職歴</h2>
+        <section id="timeline" class="timeline-outer">
+            <div class="container" id="content">
+                <div class="row">
+                    <div class="col s12 m12 l12">
+                        <ul class="timeline">
+                            <li class="event" data-date="1998-1999">
+                                <p>家電量販店物流センターシステム構築</p>
+                            </li>
+                            <li class="event" data-date="1999-2008">
+                                <p>国内業界初パッケージ開発事業開発責任者</p>
+                            </li>
+                            <li class="event" data-date="2002-2003">
+                                <p>家電メーカーグローバルロジスティクス</p>
+                            </li>
+                            <li class="event" data-date="2004">
+                                <p>米国ウォールマート/ベストバイRFID実証実験プロジェクト参加</p>
+                            </li>
+                            <li class="event" data-date="2008-2018">
+                                <p>クラウドサービス事業立ち上げ</p>
+                            </li>
+                            <li class="event" data-date="2013">
+                                <p>EVタイムシェアリングサービス構築</p>
+                            </li>
+                            <li class="event" data-date="2017">
+                                <p>IoTシステム連携サービス構築</p>
+                            </li>
+                            <li class="event" data-date="2018">
+                                <p>産業ロボット連携サービス構築</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="project.html">PROJECT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div>
+            <small>Copyright ©︎ 2021 山本企画 All rights reserved</small>
+        </div>
+    </footer>
+</body>
