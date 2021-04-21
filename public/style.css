@@ -7,14 +7,7 @@ body {
   background-color: #eee;
 }
 /*ヘッダー*/
-header {
-  position: relative;
-}
-.header .logo {
-  width: 40px;
-  margin-left: 1rem;
-  padding-top: 0.5rem;
-}
+
 img {
   max-width: 100%;
   height: auto;
@@ -39,7 +32,7 @@ img {
   left: 0;
   bottom: 0;
   height: 2px; /*線の太さ*/
-  width: 35px; /*線の長さ*/
+  width: 30px; /*線の長さ*/
   background-color: #444;
   border-radius: 2px;
   display: block;
@@ -81,6 +74,8 @@ nav a {
   color: #62626e;
   display: block;
   text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
 }
 .nav-list {
   list-style: none;
@@ -90,7 +85,7 @@ nav a {
   padding-top: 20px;
 }
 .nav-list li {
-  padding: 1rem;
+  padding: .75rem;
 }
 .nav-toggle:checked ~ .nav .nav-list {
   display: block;
@@ -113,6 +108,7 @@ nav a:hover {
     display: none; /*768px以上では使用しない */
   }
   .header {
+    position: relative;
     max-width: 980px;
     height: 80px;
     display: flex;
@@ -126,17 +122,8 @@ nav a:hover {
     margin-right: 0;
     padding-top: 0.75rem;
   }
-  header {
-    padding: 30px 0 0;
-  }
   .nav-list {
     padding: 0;
-  }
-  .logo {
-    width: auto;
-    margin: 0 0 20px;
-    padding: 0;
-    text-align: center;
   }
   .nav-toggle:checked ~ .nav .nav-list {
     display: block;
@@ -158,7 +145,7 @@ nav a:hover {
     padding-right: 0;
   }
 }
-/* スライダー */
+/* index.html */
 @keyframes slidy {
   0% {
     left: 0%;
@@ -232,6 +219,37 @@ div#slider figure {
   font-weight: 500;
   letter-spacing: 1px
 }
+@media screen and (max-width: 768px) {
+  .header .logo {
+    width: 120px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: .5rem;
+    padding-left: .5rem;
+  }
+  div#slider {
+    margin-top: 10vh;
+  }
+  .top-message {
+    padding: 1rem 1.5rem;
+    background-color: #ffffff;
+    color: #333;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    opacity: 0.75;
+  }
+  .top-message h1 {
+    font-size: 18px;
+    margin-bottom: .75rem;
+    font-weight: 500;
+    letter-spacing: 1px
+  }
+  .top-message p{
+    font-size: 12px;
+  }
+}
 /* フッター */
 #top footer{
   max-width: 980px;
@@ -242,8 +260,6 @@ div#slider figure {
   left: 0;
   right: 0;
 }
-
-
 footer nav ul {
   display: flex;
   justify-content: space-around;
@@ -267,191 +283,21 @@ footer small {
   font-size: 12px;
 }
 @media screen and (max-width: 768px) {
-  footer nav a {
-    font-size: 14px;
+  footer nav{
+    display: none;
   }
   footer small {
     display: block;
     margin-top: 0px;
-    font-size: 12px;
-    padding-top: 32px;
-    padding-bottom: 40px;
+    font-size: 10px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  footer div{
+    padding-bottom: 0;
   }
 }
-/* コンタクトフォーム */
-/* 
-#contact input::-webkit-input-placeholder,
-#contact textarea::-webkit-input-placeholder {
-  color: #aca49c;
-  font-size: 0.875em;
-}
-#contact input:focus::-webkit-input-placeholder,
-#contact textarea:focus::-webkit-input-placeholder {
-  color: #bbb5af;
-}
-
-#contact input::-moz-placeholder,
-#contact textarea::-moz-placeholder {
-  color: #aca49c;
-  font-size: 0.875em;
-}
-
-#contact input:focus::-moz-placeholder,
-#contact textarea:focus::-moz-placeholder {
-  color: #bbb5af;
-}
-
-#contact input::placeholder,
-#contact textarea::placeholder {
-  color: #aca49c;
-  font-size: 0.875em;
-}
-
-#contact input:focus::placeholder,
-#contact textarea::focus:placeholder {
-  color: #bbb5af;
-}
-
-#contact input::-ms-placeholder,
-#contact textarea::-ms-placeholder {
-  color: #aca49c;
-  font-size: 0.875em;
-}
-
-#contact input:focus::-ms-placeholder,
-#contact textarea:focus::-ms-placeholder {
-  color: #bbb5af;
-}
-
-/* on hover placeholder */
-/* 
-#contact input:hover::-webkit-input-placeholder,
-#contact textarea:hover::-webkit-input-placeholder {
-  color: #e2dedb;
-  font-size: 0.875em;
-}
-
-#contact input:hover:focus::-webkit-input-placeholder,
-#contact textarea:hover:focus::-webkit-input-placeholder {
-  color: #cbc6c1;
-}
-
-#contact input:hover::-moz-placeholder,
-#contact textarea:hover::-moz-placeholder {
-  color: #e2dedb;
-  font-size: 0.875em;
-}
-
-#contact input:hover:focus::-moz-placeholder,
-#contact textarea:hover:focus::-moz-placeholder {
-  color: #cbc6c1;
-}
-
-#contact input:hover::placeholder,
-#contact textarea:hover::placeholder {
-  color: #e2dedb;
-  font-size: 0.875em;
-}
-
-#contact input:hover:focus::placeholder,
-#contact textarea:hover:focus::placeholder {
-  color: #cbc6c1;
-}
-
-#contact input:hover::placeholder,
-#contact textarea:hover::placeholder {
-  color: #e2dedb;
-  font-size: 0.875em;
-}
-
-#contact input:hover:focus::-ms-placeholder,
-#contact textarea:hover::focus:-ms-placeholder {
-  color: #cbc6c1;
-}
-
-#contact body {
-  font-family: "noto-sans-cjk-jp", sans-serif;
-  background: #e2dedb;
-  color: #b3aca7;
-}
-
-#form {
-  position: relative;
-  width: 500px;
-  margin: 50px auto 100px auto;
-}
-
-#contact input {
-  font-family: "noto-sans-cjk-jp", sans-serif;
-  font-size: 0.875em;
-  width: 470px;
-  height: 50px;
-  padding: 0px 15px 0px 15px;
-
-  background: transparent;
-  outline: none;
-  color: #726659;
-
-  border: solid 1px #b3aca7;
-  border-bottom: none;
-
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-}
-
-#contact input:hover {
-  background: #b3aca7;
-  color: #e2dedb;
-}
-
-#contact textarea {
-  width: 470px;
-  max-width: 470px;
-  height: 110px;
-  max-height: 110px;
-  padding: 15px;
-
-  background: transparent;
-  outline: none;
-
-  color: #726659;
-  font-family: "noto-sans-cjk-jp", sans-serif;
-  font-size: 0.875em;
-
-  border: solid 1px #b3aca7;
-
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-}
-
-#contact textarea:hover {
-  background: #b3aca7;
-  color: #e2dedb;
-}
-
-#contact #submit {
-  width: 502px;
-
-  padding: 0;
-  margin: 10rem 0px 0px 0px;
-
-  font-family: "noto-sans-cjk-jp", sans-serif;
-  font-size: 0.875em;
-  color: #b3aca7;
-
-  outline: none;
-  cursor: pointer;
-
-  border: solid 1px #b3aca7;
-}
-
-#contact #submit:hover {
-  color: #e2dedb;
-}  */
+/* contact.html */
 .g-form{
   text-align: center;
   margin: 5rem auto;
