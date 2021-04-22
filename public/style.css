@@ -437,7 +437,7 @@ footer small {
 
 /* 会社概要 */
 .company{
-   margin-top: 3rem;
+  margin-top: 3rem;
   margin-bottom: 9rem;
 }
 .company table {
@@ -451,11 +451,11 @@ footer small {
   padding-bottom: 3rem;
   font-weight: 400;
 }
-.company table tr:nth-child(6) th {
+.company table tr:nth-child(5) th {
   vertical-align: middle;
   padding-bottom: inherit;
 }
-.company table tr:nth-child(6) th::after {
+.company table tr:nth-child(5) th::after {
   top: calc(50% - 1px);
 }
 .company table th:after {
@@ -473,6 +473,28 @@ footer small {
   text-align: left;
   padding-left: 1.5rem;
   line-height: 1.75;
+}
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 22px;
+  }
+  .company{
+    padding-right: 2rem;
+    padding-left: 2rem;
+    margin-bottom:6rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .company table th {
+    padding-right: 2rem;
+  }
+  .company table td {
+    padding-left: 0;
+  }
+  .company table th:after {
+    top: calc(22% - 1px);
+    right: 13px;
+  }
 }
 /* タイムライン */
 /*——————————————
@@ -585,6 +607,9 @@ Responsive Stuff
 }
 
 @media (max-width: 768px) {
+  section.timeline-outer {
+    width: 90%;
+  }
   #content {
     padding-left: 0;
   }
@@ -599,5 +624,15 @@ Responsive Stuff
   }
   .timeline p {
     padding-top: 20px;
+    word-break: keep-all;
+  }
+  .timeline .event:after {
+    top: 25px;
+  }
+  .main-container{
+    margin-bottom: 2rem;
+  }
+  .timeline {
+    padding: 20px 0 20px 20px;
   }
 }
