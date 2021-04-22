@@ -427,6 +427,30 @@ footer small {
 }
 
 /* about.html */
+.skill{
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+}
+.skill-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 2rem;
+}
+.skill-content{
+   text-align: center;
+}
+.skill-content:nth-child(2) p{
+  letter-spacing: -1px;
+}
+.skill-content h4{
+  color: #62626e;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.skill svg{
+  width: 80px;
+}
 .title {
   text-align: center;
   font-size: 24px;
@@ -435,6 +459,12 @@ footer small {
   color: #62626e;
 }
 
+.skill-content p{
+  margin-top: 1rem;
+}
+.skill-content p:first-of-type{
+  margin-top: 2rem;
+}
 /* 会社概要 */
 .company{
   margin-top: 3rem;
@@ -494,6 +524,25 @@ footer small {
   .company table th:after {
     top: calc(22% - 1px);
     right: 13px;
+  }
+  .skill{
+    padding: 0 1rem;
+  }
+  .skill-container{
+    grid-template-columns: 1fr 1fr;
+    row-gap: 4rem;
+  }
+  .skill-content h4{
+    font-size: 22px;
+  }
+  .skill svg{
+    width: 40px;
+  }
+  .skill-content p{
+    font-size: 14px;
+  }
+  .skill-content:nth-child(2) p,.skill-content:nth-child(1) p{
+    font-size: 12px;
   }
 }
 /* タイムライン */
