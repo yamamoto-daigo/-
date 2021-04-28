@@ -1,0 +1,5 @@
+hugo server -D
+cd /Users/yamamotodaigo/h-yamamotokikaku 
+hugo server -D
+ hugo
+hugo server -D

@@ -1,0 +1,9 @@
+cd desktop
+hugo new site Hugo-Ananke
+ls
+cd Hugo-Ananke/
+ls
+git init
+git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
+echo 'theme = "ananke"' >> config.toml
+hugo server -D
