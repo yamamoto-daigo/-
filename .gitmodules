@@ -1,0 +1,3 @@
+[submodule "Desktop/Yhp-hugo/themes/hugo-scroll"]
+	path = Desktop/Yhp-hugo/themes/hugo-scroll
+	url = https://github.com/janraasch/hugo-scroll.git
